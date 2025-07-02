@@ -13,21 +13,19 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'bling/vim-airline'
 Plugin 'mhinz/vim-signify.git'
 Plugin 'tpope/vim-fugitive'
-Plugin 'elzr/vim-json.git'
-Bundle 'Yggdroot/indentLine'
+Plugin 'Yggdroot/indentLine'
 Plugin 'flazz/vim-colorschemes'
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
-Bundle "honza/vim-snippets"
 Plugin 'preservim/nerdtree'
 Plugin 'preservim/nerdcommenter'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'ryanoasis/vim-devicons'
-Plugin 'stamblerre/gocode', {'rtp': 'vim/'}
+Plugin 'ervandew/supertab'
 Plugin 'fatih/vim-go'
 Plugin 'python-mode/python-mode'
-Plugin 'ervandew/supertab'
+Plugin 'elzr/vim-json.git'
+Plugin 'google/vim-jsonnet'
+Plugin 'hashivim/vim-terraform'
+Plugin 'pangloss/vim-javascript'
 
 call vundle#end()
 filetype plugin indent on
@@ -95,7 +93,7 @@ map <C-x> :NERDTreeToggle<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""
-"  vim-go
+"  vim-go
 """"""""""""""""""""""""""""""""""""""""""""""""""
 let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
@@ -107,3 +105,6 @@ let g:go_highlight_extra_types = 1
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
+let g:terraform_fmt_on_save = 1
+
+let g:snipMate = { 'snippet_version' : 1 }
